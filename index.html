@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text Summarizer</h1>
+            <p>Quick and simple text summarization</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <textarea 
+                    id="input-text" 
+                    placeholder="Paste your text here..."
+                ></textarea>
+                <div class="controls">
+                    <div class="slider-container">
+                        <label for="summary-length">Number of Sentences</label>
+                        <input 
+                            type="range" 
+                            id="summary-length" 
+                            min="1" 
+                            max="5" 
+                            value="3"
+                        >
+                        <span id="length-value">3 sentences</span>
+                    </div>
+                    <button id="summarize-btn">Summarize</button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h2>Summary</h2>
+                <div id="summary-output" class="summary-text">
+                    Your summary will appear here...
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
